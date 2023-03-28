@@ -15,6 +15,7 @@ function main() {
 
     var numUm = 10;
     var numDois = 22;
+    var numTres = 3;
 
 
     const resultado = somar(numUm, numDois);
