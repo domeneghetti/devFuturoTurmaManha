@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina treinamento</title>
+    </head>
+    <body>
+        <p>Resultado da Soma:</p>
+        <span id="resultado"></span>
+
+        <button onclick="main()">Calcular</button>
+
+        <form action="http://localhost:3000/calc" method="post">
+            Numero Um: <input type="text" name="numeroUm" /><br>
+            Numero Dois: <input type="text" name="numeroDois" /><br>
+
+            <input type="submit" value="Calcular" />
+        </form>
+
+        <script>
+            function somar(numeroUm, numeroDois) {
+                return numeroUm + numeroDois;
+            }
+
+            function main() {
+                console.log('Hello World')
+
+                var numUm = 10;
+                var numDois = 22;
+
+                const resultado = somar(numUm, numDois);
+                document.getElementById("resultado").innerHTML = resultado
+            }
+
+   
+        </script>
+    </body>
+</html>
